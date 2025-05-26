@@ -1,82 +1,23 @@
-# keyboard Event Logger for Windows
+Keyboard Input Activity Monitor (For Windows)
+Overview
+This tool records keyboard input events on a Windows system. It's designed for authorized auditing, usability analysis, or parental monitoring, and can provide timestamped logs of each key interaction on the system.
 
-## What is a Key Logger?
+Important: This tool must be used only with explicit permission from the owner or user of the device. Unauthorized use is strictly prohibited and may be illegal in your jurisdiction.
 
-A keylogger is a type of software or hardware device that records every keystroke made on a computer keyboard. It is
-designed to run in the background of a computer system without being detected by the user, and it can capture all the data
-that is entered on the keyboard, including usernames, passwords, credit card numbers, and other sensitive information.
+Purpose
+Monitoring keyboard input can serve various legitimate needs:
 
-## Why is it used?
+Corporate Environments: Monitor activity on company-owned devices with employee consent.
 
-Keyloggers can be used for both legitimate and illegitimate purposes. For example, some companies use keyloggers to 
-monitor employee activity on company-owned computers, while hackers may use keyloggers to steal sensitive information for
-financial gain or other malicious purposes.
+Parental Control: Help guardians observe typing behavior on family systems.
 
-## Requirements
+User Testing: Analyze user interaction patterns during UI/UX evaluations or software testing.
 
-1. python3: -
-You should have python3 installed in your system. You can download it from the official website.   (https://www.python.org/downloads/)
+Requirements
+Make sure you have the following installed:
 
-2. keyboard module: -
-The keylogger detects keystrokes with the help of keyboard module. Use the command below to install
-the keyboard module: -
+Python 3
+Download and install Python from the official site: https://www.python.org/downloads/
 
-```
-pip install keyboard
-```
-
-## Usage
-
-To use the program, simply run the keylogger.py file in Python. 
-
-```
-python keylogger.py
-```
-
-In order to actually implement it, the first step will be to create an executable file. Below are the steps to convert your python file into
-a executable file with the help of pyinstaller. PyInstaller bundles a Python application and all its dependencies into a single package. The 
-user can run the packaged app without installing a Python interpreter or any modules.
-
-Step 1: First install pyinstaller package with the help of command given below: -  
-
-```pip install pyinstaller```
-
-Step 2: Create a .exe file with the help of pyinstaller: -
-
-```pyinstaller -F --noconsole keylogger.py```
-
-This command will create a standalone executable file from a Python script named name.py. For more information, visit https://pyinstaller.org/en/stable/usage.html#options
-
-## Limitations
-
-1. The log file is created only after the program execution is terminated.
-2. The log file is stored on the targets' local machine. So, in order to retrieve the log file, you should have phsyical 
-    access to the target machine.
-
-## Output
-
-Upon starting the program, a "log.txt" file will be created. This text file will contain a log of
-all the keyboard events, including the time at which they were recorded and the key that was pressed or released. 
-Here is an example of what "log.txt" looks like: -
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/78775456/227770622-ca2419f4-b1f9-4345-af76-f688ced4ed92.png" alt="My Image">
-</div>
-
-## Acknowledgements
-
-1. Keyboard module:
-https://github.com/boppreh/keyboard
-
-2. Time module:
-https://www.geeksforgeeks.org/python-time-module/
-
-
-
-
-
-
-
-
-
-
+keyboard Module
+This Python library helps detect and log key events in real-time.
